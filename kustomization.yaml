@@ -2,11 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - namespace.yaml
-  - deployment.yaml
-  - service.yaml
+- namespace.yaml
+- deployment.yaml
+- service.yaml
 
 images:
-  - name: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
-    newName: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
-    newTag: v1
+- name: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
+  newName: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
+  newTag: ce06189
