@@ -4,7 +4,7 @@ metadata:
   name: mathsync-api
   namespace: monitoring
   labels:
-    release: monitoring
+    release: kube-prometheus-stack
 spec:
   selector:
     matchLabels:

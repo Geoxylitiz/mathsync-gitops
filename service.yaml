@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: mathsync-service
   namespace: mathsync
+  labels:
+    app: mathsync-api
 
 spec:
   type: LoadBalancer
