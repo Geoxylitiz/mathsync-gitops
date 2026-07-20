@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: mathsync-api
+  namespace: monitoring
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: mathsync-api
+
+  namespaceSelector:
+    matchNames:
+      - mathsync
+
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
