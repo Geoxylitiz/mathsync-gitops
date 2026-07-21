@@ -10,4 +10,4 @@ resources:
 images:
 - name: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
   newName: 480582412269.dkr.ecr.ap-southeast-1.amazonaws.com/mathsync-backend
-  newTag: a75b9bf
+  newTag: a8e952e
